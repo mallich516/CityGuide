@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".loginactivity.Login2RegisterFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_color2"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="20sp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/upload_profile_photo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/logo" />
+
+
+</RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:defaultFocusHighlightEnabled="true"
+            android:drawableLeft="@drawable/account32"
+            android:drawablePadding="10dp"
+            android:hint="Fullname"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/remail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:defaultFocusHighlightEnabled="true"
+            android:drawableLeft="@drawable/emailicon"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/phno"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:defaultFocusHighlightEnabled="true"
+            android:drawableLeft="@drawable/phone_icon"
+            android:drawablePadding="10dp"
+            android:hint="Phone No"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/rpwd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:defaultFocusHighlightEnabled="true"
+            android:drawableLeft="@drawable/pwd32"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.75"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/rbtng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="Female"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_weight="0.80"
+            android:background="@drawable/roundedcorners"
+            android:text="Register"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="20sp"
+            android:layout_weight="0.75"
+            android:elevation="10dp">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

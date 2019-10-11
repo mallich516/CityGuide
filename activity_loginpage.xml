@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".loginactivity.Login2loginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/background_color2"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:padding="30sp"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/logo1" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0sp"
+            android:layout_weight="1.5"
+            android:drawableLeft="@drawable/account32"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:drawableStart="@drawable/pwd32"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/pwd32" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgotpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:text="Forgot Password"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10sp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedcorners"
+            android:text="Login"
+            android:textColor="#f2f2f2"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
+
+
